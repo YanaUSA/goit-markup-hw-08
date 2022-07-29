@@ -20,7 +20,7 @@
 }
 
 .menu-button__container {
-    // display: none;
+    display: none;
 
     position: absolute;
     top: 100%;
@@ -30,4 +30,8 @@
     padding: 48px 40px;
 
     background-color: tomato;
+
+    &.is-open {
+        display: block;
+    }
 }

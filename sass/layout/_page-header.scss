@@ -1,13 +1,12 @@
 .header {
         border-bottom: 1px solid #ececec;
-        position: relative;
+        
 
     &__box {
-        outline: 2px solid red;
-
-        width: 100%;
-        // display: flex;
-        // align-items: center;
+        position: relative;
+        
+        display: flex;
+        align-items: center;
     }
 }
 
@@ -16,9 +15,11 @@
 .navigation {
     // display: flex;
 
+    
+
     &__list {
         outline: 2px solid red;
-        // display: flex;
+        display: flex;
     }
 
     &__item {
@@ -64,7 +65,7 @@
 // Header contacts
 
 .header-contacts {
-    // display: flex;
+    display: flex;
     margin-left: auto;
 
     &__icon {

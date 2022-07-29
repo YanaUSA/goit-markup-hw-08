@@ -1,14 +1,8 @@
-@import './utils/normalize';
 @import './utils/variables';
-@import './utils/visually-hidden';
-@import './utils/base';
-@import './utils/layouts';
+@import './utils/placeholder';
 
-@import './components/header/index-header';
-@import './components/main/index-main';
-@import './components/footer/footer';
-@import './components/modal/index-modal';
-@import './components/page-portfolio/index-portfolio';
+@import './base/common';
+@import './base/reset';
 
-
-
+@import './components/index-components';
+@import './layout/index-layouts';

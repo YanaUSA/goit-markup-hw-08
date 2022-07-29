@@ -1,0 +1,19 @@
+%centeredflex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+// виклик шаблону
+
+// @extend enteredflex;
+
+// Динамічна змінняб міксін
+
+// @mixin centeredflex() {
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+// }
+
+// @include centeredflex; */
