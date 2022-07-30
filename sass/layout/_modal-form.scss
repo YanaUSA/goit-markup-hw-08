@@ -3,7 +3,7 @@
     &__label {
         position: relative;
         display: block;
-        // width: 450px;
+        width: 100%;
         margin-bottom: 10px;
         font-size: 12px;
         line-height: 1.16;
@@ -65,19 +65,23 @@
 
 .checkbox {
     position: relative;
-    @extend %centeredflex;
+    display: flex;
+    justify-content: start;
+    align-items: center;
     margin-bottom: 30px;
-    line-height: 1.71;
+    font-size: 12px;
+    line-height: 1.17;
 
-    &__field {
-        position: absolute;
-        width: 16px;
-        height: 15px;
-        top: 4px;
-        left: 14px;
-        background-image: url(../images/icon-unchecked.svg);
+    @media screen and (min-width: 1200px) {
+        & {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 14px;
+            line-height: 1.71;
+        }
     }
-
+    
     &__input {
         position: absolute;
         width: 1px;
@@ -89,6 +93,21 @@
         clip-path: inset(100%);
         clip: rect(0 0 0 0);
         overflow: hidden;
+    }
+
+    &__field {
+        position: absolute;
+        width: 16px;
+        height: 15px;
+        left: 0;
+        background-image: url(../images/icon-unchecked.svg);
+    }
+
+    @media screen and (min-width: 1200px) {
+        &__field {
+            left: 14px;
+            top: 4px;
+        }
     }
 
     &__agreement {

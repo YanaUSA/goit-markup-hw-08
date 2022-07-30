@@ -48,7 +48,7 @@
     margin-bottom: 12px;
     font-weight: 700;
     font-size: 20px;
-    line-height: 1.15;
+    line-height: 1.5;
     text-align: center;
     color: var(--main-text-color);
   }
@@ -59,11 +59,18 @@
     position: absolute;
     left: 50%;
     top: 50%;
-    min-width: 528px;
+    max-width: 528px;
+    width: 100%;
     min-height: 581px;
     transform: translate(-50%, -50%) scale(1);
     transition: transform 500ms var(--cubic);
   }
+}
+
+@media screen and (min-width: 1199px) {
+  .modal__title {
+      line-height: 1.15;
+    }
 }
 
 .modal__close-btn:hover,
