@@ -5,3 +5,7 @@ body {
     background-color: var(--white-color);
     color: var(--main-text-color);
 }
+
+body.modal-open {
+    overflow: hidden;
+}

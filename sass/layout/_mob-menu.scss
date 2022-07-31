@@ -1,11 +1,22 @@
 .menu-button {
-    display: inline-flex;
-    margin: 0;
+    outline: 2px solid red;
+
+    display: block;
+    margin: 10px 0px;
     padding: 0;
     border: none;
     background-color: transparent;
     cursor: pointer;
+    transition: fill var(--transition-time) var(--cubic);
 
+    &__icon {
+        fill: var(--main-text-color #212121);
+    }
+
+    @media screen and (min-width: 768px) {
+        display: none;
+        }
+    
     & .icon-cross {
     display: none;
     }
@@ -16,22 +27,38 @@
 
     &.is-open .icon-menu {
     display: none;
-    }
+    } 
+
+    
+}
+
+.menu-button:hover {
+    fill: var(--accent-color);
 }
 
 .menu-button__container {
-    display: none;
 
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    height: 600px;
     padding: 48px 40px;
 
-    background-color: tomato;
-
-    &.is-open {
-        display: block;
+    @media screen and (max-width: 767px) {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
     }
+
+
+&.is-open {
+    display: block;
+}
+
+    // @media screen and (min-width: 768px) {
+    //     display: flex;
+    //     justify-content: space-between;
+    //     flex-grow: 1;
+    //     width: 100%;
+    // }
+        
+background-color: beige;
 }
