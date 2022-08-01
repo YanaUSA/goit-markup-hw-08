@@ -4,12 +4,16 @@
 
 .team {
     display: flex;
-    justify-content: space-between;
-    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    // justify-content: space-between;
+    
 
-    font-weight: 400;
+    // // font-weight: 400;
     font-size: 16px;
-    line-height: 1.18;
+    // line-height: 1.18;
 
     &__item {
         background-color: var(--white-color);
@@ -25,6 +29,8 @@
     &__name {
         margin-bottom: 10px;
         font-weight: 500;
+        font-size: 16px;
+        line-height: 1.18;
         color: var(--main-text-color);
     }
 

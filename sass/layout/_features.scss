@@ -1,19 +1,48 @@
 .features {
-    display: flex;
+    display: block;
+        
+    @media screen and (min-width: 768px) {
+            display: flex;
+            flex-wrap: wrap;
+            margin: -15px;
+        }
+
+    @media screen and (min-width: 1200px) {
+        display: flex;
+    }        
 }
 
 .feature-item {
-    width: 270px;
+    outline: 3px solid green;
+    display: flex;
+    flex-direction: column;
+    align-items: start;    
 
-    &:not(:last-child) {
+    @media screen and (max-width: 767px){
+        align-items: center;
+
+        &:not(:last-child) {
+        margin-bottom: 30px;
+        }
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        margin: 15px;
+        width: calc((100% - 2 * 30px) / 2);        
+        }                   
+
+    @media screen and (min-width: 1200px) {
+        max-width: 270px;
+        &:not(:last-child) {
         margin-right: 30px;
+        }
     }
 
     &__box {
         @extend %centeredflex;
         background: var(--secondary-section-bgd);
-        width: 270px;
-        height: 120px;
+        min-height: 120px;
+        width: 100%;
         border-radius: 4px;
         margin-bottom: 30px;
     }

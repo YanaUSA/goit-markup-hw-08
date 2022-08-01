@@ -90,15 +90,10 @@
             flex-direction: column-reverse;
         }
     
-    @media screen and (max-width: 767px) {
-        display: flex;
-        
-    }
-
     @media screen and (min-width: 1199px) {
-        display: flex;
-        margin-left: auto;
-    }
+            display: flex;
+            margin-left: auto;
+        }
 
     &__icon {
         margin-right: 10px;
