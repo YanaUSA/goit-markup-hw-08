@@ -1,8 +1,7 @@
 .portfolio__grid {
+    
     outline: 2px solid blue;
-
-    width: 100%;
-
+    
     @media screen and (min-width: 768px) {
         display: flex;
         flex-wrap: wrap;
@@ -21,6 +20,7 @@
         &:not(:last-child) {
             margin-bottom: 30px;
         }
+    }
             
     @media screen and (min-width: 768px) {
             margin: 15px;
@@ -30,10 +30,10 @@
     @media screen and (min-width: 1200px) {
             width: calc((100% - 3 * 30px) / 3);
     }
-}
 
     &__link {
         display: block;
+        height: 100%;
         transition: box-shadow var(--transition-time) var(--cubic);
     }
 
@@ -67,7 +67,7 @@
     }
 
     &__card-desc {
-        background-color: aqua;
+        // background-color: aqua;
 
         padding: 20px 24px;
         border-right: 1px solid #eeeeee;

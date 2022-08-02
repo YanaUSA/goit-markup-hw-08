@@ -456,8 +456,8 @@ img {
   }
 }
 .footer__logo {
-  display: inline-block;
-  width: 100%;
+  display: block;
+  text-align: center;
 }
 .footer__address-box {
   display: block;
@@ -645,11 +645,15 @@ img {
 .logo {
   padding-top: 24px;
   padding-bottom: 25px;
-  margin-right: 93px;
   font-family: "Raleway";
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
+}
+@media screen and (min-width: 1200px) {
+  .logo {
+    margin-right: 93px;
+  }
 }
 @media screen and (max-width: 1199px) {
   .logo {
@@ -1088,7 +1092,6 @@ img {
 
 .portfolio__grid {
   outline: 2px solid blue;
-  width: 100%;
 }
 @media screen and (min-width: 768px) {
   .portfolio__grid {
@@ -1110,19 +1113,20 @@ img {
     margin-bottom: 30px;
   }
 }
-@media screen and (max-width: 767px) and (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .portfolio-item {
     margin: 15px;
     width: calc((100% - 60px) / 2);
   }
 }
-@media screen and (max-width: 767px) and (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
   .portfolio-item {
     width: calc((100% - 90px) / 3);
   }
 }
 .portfolio-item__link {
   display: block;
+  height: 100%;
   -webkit-transition: -webkit-box-shadow var(--transition-time) var(--cubic);
   transition: -webkit-box-shadow var(--transition-time) var(--cubic);
   transition: box-shadow var(--transition-time) var(--cubic);
@@ -1152,7 +1156,6 @@ img {
   transition: transform var(--transition-time) var(--cubic), -webkit-transform var(--transition-time) var(--cubic);
 }
 .portfolio-item__card-desc {
-  background-color: aqua;
   padding: 20px 24px;
   border-right: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
