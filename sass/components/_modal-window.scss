@@ -44,6 +44,7 @@
     cursor: pointer;
     transition: fill var(--transition-time) var(--cubic);
   }
+
   &__title {
     margin-bottom: 12px;
     font-weight: 700;
@@ -54,13 +55,12 @@
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 480px) {
   .modal {
     position: absolute;
     left: 50%;
     top: 50%;
-    max-width: 450px;
-    width: 100%;
+    min-width: 450px;
     min-height: 609px;
     transform: translate(-50%, -50%) scale(1);
   }
@@ -68,9 +68,9 @@
 
 @media screen and (min-width: 1200px) {
   .modal {
-    max-width: 528px;
-    width: 100%;
+    min-width: 528px;
     min-height: 581px;
+    transform: translate(-50%, -50%) scale(1);
   }
 }
 

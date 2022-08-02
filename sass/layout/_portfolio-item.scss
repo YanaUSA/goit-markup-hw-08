@@ -1,23 +1,36 @@
 .portfolio__grid {
-    display: flex;
-    flex-wrap: wrap;
+    outline: 2px solid blue;
+
+    width: 100%;
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+        margin: -15px;
+        }
 }
 
 //Portfolio card
 
 .portfolio-item {
-    width: calc((100% - 60px) / 3);
-    margin-right: 30px;
-    margin-bottom: 30px;
+    outline: 2px solid red;
+
     background: var(--white-color);
 
-    &:nth-child(3n) {
-            margin-right: 0;
+    @media screen and (max-width: 767px) {
+        &:not(:last-child) {
+            margin-bottom: 30px;
         }
-
-    &:nth-last-child(-n + 3) {
-        margin-bottom: 0;
+            
+    @media screen and (min-width: 768px) {
+            margin: 15px;
+            width: calc((100% - 2 * 30px) / 2);
+        }
+            
+    @media screen and (min-width: 1200px) {
+            width: calc((100% - 3 * 30px) / 3);
     }
+}
 
     &__link {
         display: block;
@@ -35,7 +48,13 @@
         left: 0;
         width: 100%;
         height: 100%;
-        padding: 63px 24px;
+
+        padding: 24px;
+
+        // display: flex;
+        // flex-grow: 1;
+
+        // padding: 63px 24px;
 
         font-style: inherit;
         font-size: 18px;
@@ -48,6 +67,8 @@
     }
 
     &__card-desc {
+        background-color: aqua;
+
         padding: 20px 24px;
         border-right: 1px solid #eeeeee;
         border-bottom: 1px solid #eeeeee;
