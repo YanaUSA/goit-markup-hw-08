@@ -7,6 +7,7 @@
   background: rgba(0, 0, 0, 0.2);
   opacity: 1;
   transition: opacity var(--transition-time) var(--cubic);
+  z-index: 10;
 }
 
 @media screen and (max-width: 767px) {
@@ -60,16 +61,16 @@
     position: absolute;
     left: 50%;
     top: 50%;
-    min-width: 450px;
-    min-height: 609px;
+    max-width: 450px;
+    max-height: 609px;
     transform: translate(-50%, -50%) scale(1);
   }
 }
 
 @media screen and (min-width: 1200px) {
   .modal {
-    min-width: 528px;
-    min-height: 581px;
+    max-width: 528px;
+    max-height: 581px;
     transform: translate(-50%, -50%) scale(1);
   }
 }

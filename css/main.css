@@ -119,6 +119,7 @@ img {
   opacity: 1;
   -webkit-transition: opacity var(--transition-time) var(--cubic);
   transition: opacity var(--transition-time) var(--cubic);
+  z-index: 10;
 }
 
 @media screen and (max-width: 767px) {
@@ -172,16 +173,16 @@ img {
     position: absolute;
     left: 50%;
     top: 50%;
-    min-width: 450px;
-    min-height: 609px;
+    max-width: 450px;
+    max-height: 609px;
     -webkit-transform: translate(-50%, -50%) scale(1);
             transform: translate(-50%, -50%) scale(1);
   }
 }
 @media screen and (min-width: 1200px) {
   .modal {
-    min-width: 528px;
-    min-height: 581px;
+    max-width: 528px;
+    max-height: 581px;
     -webkit-transform: translate(-50%, -50%) scale(1);
             transform: translate(-50%, -50%) scale(1);
   }
@@ -706,12 +707,13 @@ img {
 }
 
 .menu-button__container {
-  background: #FFFFFF;
+  background-color: aqua;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   width: 100%;
-  z-index: 999;
+  height: 100%;
+  z-index: 5;
 }
 @media screen and (max-width: 767px) {
   .menu-button__container {
@@ -1179,6 +1181,11 @@ img {
   color: var(--secondary-text-color);
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .portfolio-item-container-stretch {
+    padding: 20px 24px 56px 24px;
+  }
+}
 .portfolio-item__link:hover,
 .portfolio-item__link:focus {
   -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
