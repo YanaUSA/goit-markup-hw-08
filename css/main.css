@@ -644,7 +644,7 @@ img {
 
 @media screen and (min-width: 480px) {
   .overlay {
-    max-width: 480px;
+    max-width: 767px;
     max-height: 400px;
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), color-stop(rgba(47, 48, 58, 0.4)), color-stop(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../../images/img-bg-mob.jpg");
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/img-bg-mob.jpg");
@@ -658,7 +658,7 @@ img {
 }
 @media screen and (min-width: 768px) {
   .overlay {
-    max-width: 768px;
+    max-width: 1199px;
     max-height: 400px;
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), color-stop(rgba(47, 48, 58, 0.4)), color-stop(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/img-bg-tab.jpg");
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/img-bg-tab.jpg");
@@ -758,6 +758,16 @@ img {
     position: fixed;
     top: 0;
     left: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     width: 100vw;
     height: 100vh;
     padding: 48px 40px;
@@ -952,7 +962,7 @@ img {
 }
 @media screen and (max-width: 767px) {
   .navigation__list {
-    margin-bottom: 300px;
+    margin-bottom: auto;
   }
 }
 @media screen and (min-width: 768px) {
