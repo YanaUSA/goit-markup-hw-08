@@ -32,9 +32,9 @@
                         </svg>
                     </button>
                     <ul class="navigation__list">
-                        <li class="navigation__item"> <a href="./index.html" class="navigation__link current">Студия</a>
+                        <li class="navigation__item"> <a href="./index.html" class="navigation__link">Студия</a>
                         </li>
-                        <li class="navigation__item"> <a href="./portfolio.html" class="navigation__link">Портфолио</a>
+                        <li class="navigation__item"> <a href="./portfolio.html" class="navigation__link current">Портфолио</a>
                         </li>
                         <li class="navigation__item"> <a href="#" class="navigation__link">Контакты</a>
                         </li>
@@ -92,7 +92,21 @@
                     <li class="portfolio-item">
                         <a href="#" class="portfolio-item__link">
                             <div class="portfolio-item__overlay">
-                                <img src="./images/technokryak.jpg" alt="Веб-сайт на экране ноутбука" width="370">
+                                <picture>
+                                    <source 
+                                    srcset="./images/2-1-pc.jpg 1x, ./images/2-1-pc@2x.jpg 2x" 
+                                    media="(min-width: 1200px)">
+
+                                    <source 
+                                    srcset="./images/2-1-tab.jpg 1x, ./images/2-1-tab@2x.jpg 2x" 
+                                    media="(min-width: 768px)">
+
+                                    <source 
+                                    srcset="./images/2-1-mob.jpg 1x, ./images/2-1-mob@2x.jpg 2x"
+                                    media="(max-width: 767px)">
+                                    
+                                    <img src="./images/2-1-tab.jpg" alt="Веб-сайт на экране ноутбука">
+                                </picture>                                
                                 <p class="portfolio-item__overlay-desc">
                                     Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить
                                     исчерпывающие сведения о компании или частном лице.</p>
@@ -106,7 +120,15 @@
                     <li class="portfolio-item">
                         <a href="#" class="portfolio-item__link">
                             <div class="portfolio-item__overlay">
-                                <img src="./images/poster.jpg" alt="Постер с баскетболистами" width="370">
+                                <picture>
+                                    <source srcset="./images/2-2-pc.jpg 1x, ./images/2-2-pc@2x.jpg 2x" media="(min-width: 1200px)">
+                                
+                                    <source srcset="./images/2-2-tab.jpg 1x, ./images/2-2-tab@2x.jpg 2x" media="(min-width: 768px)">
+                                
+                                    <source srcset="./images/2-2-mob.jpg 1x, ./images/2-2-mob@2x.jpg 2x" media="(max-width: 767px)">
+                                
+                                    <img src="./images/2-2-tab.jpg" alt="Постер с баскетболистами">
+                                </picture>
                                 <p class="portfolio-item__overlay-desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta nemo quia quasi perferendis culpa impedit illum voluptate magnam! Debitis, vero.</p>
                             </div>
                             <div class="portfolio-item__card-desc">
@@ -118,7 +140,15 @@
                     <li class="portfolio-item">
                         <a href="#" class="portfolio-item__link">
                             <div class="portfolio-item__overlay">
-                                <img src="./images/seafood.jpg" alt="Логотип рыбного ресторана" width="370">
+                                <picture>
+                                    <source srcset="./images/2-3-pc.jpg 1x, ./images/2-3-pc@2x.jpg 2x" media="(min-width: 1200px)">
+                                
+                                    <source srcset="./images/2-3-tab.jpg 1x, ./images/2-3-tab@2x.jpg 2x" media="(min-width: 768px)">
+                                
+                                    <source srcset="./images/2-3-mob.jpg 1x, ./images/2-3-mob@2x.jpg 2x" media="(max-width: 767px)">
+                                
+                                    <img src="./images/2-3-tab.jpg" alt="Логотип рыбного ресторана">
+                                </picture>
                                 <p class="portfolio-item__overlay-desc">
                                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque molestiae asperiores pariatur sed quo at labore repudiandae consectetur sapiente? Nam.
                                 </p>
@@ -132,7 +162,15 @@
                     <li class="portfolio-item">
                         <a href="#" class="portfolio-item__link">
                             <div class="portfolio-item__overlay">
-                                <img src="./images/prime.jpg" alt="Черные наушники" width="370">
+                                <picture>
+                                    <source srcset="./images/2-4-pc.jpg 1x, ./images/2-4-pc@2x.jpg 2x" media="(min-width: 1200px)">
+                                
+                                    <source srcset="./images/2-4-tab.jpg 1x, ./images/2-4-tab@2x.jpg 2x" media="(min-width: 768px)">
+                                
+                                    <source srcset="./images/2-4-mob.jpg 1x, ./images/2-4-mob@2x.jpg 2x" media="(max-width: 767px)">
+                                
+                                    <img src="./images/2-4-tab.jpg" alt="Черные наушники">
+                                </picture>
                                 <p class="portfolio-item__overlay-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. In architecto at sunt quo unde, vitae maiores voluptate blanditiis alias nam!</p>
                             </div>                            
                             <div class="portfolio-item__card-desc">
@@ -144,7 +182,15 @@
                     <li class="portfolio-item">
                         <a href="#" class="portfolio-item__link">
                             <div class="portfolio-item__overlay">
-                                <img src="./images/boxes.jpg" alt="Две коробки" width="370">
+                                <picture>
+                                    <source srcset="./images/2-5-pc.jpg 1x, ./images/2-5-pc@2x.jpg 2x" media="(min-width: 1200px)">
+                                
+                                    <source srcset="./images/2-5-tab.jpg 1x, ./images/2-5-tab@2x.jpg 2x" media="(min-width: 768px)">
+                                
+                                    <source srcset="./images/2-5-mob.jpg 1x, ./images/2-5-mob@2x.jpg 2x" media="(max-width: 767px)">
+                                
+                                    <img src="./images/2-5-tab.jpg" alt="Две коробки">
+                                </picture>
                                 <p class="portfolio-item__overlay-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi error, tenetur rerum ex enim ipsam pariatur adipisci. Molestias, minima fugiat.</p>
                             </div>                            
                             <div class="portfolio-item__card-desc">
@@ -156,7 +202,15 @@
                     <li class="portfolio-item">
                         <a href="#" class="portfolio-item__link">
                             <div class="portfolio-item__overlay">
-                                <img src="./images/inspiration.jpg" alt="Монитор" width="370">
+                                <picture>
+                                    <source srcset="./images/2-6-pc.jpg 1x, ./images/2-6-pc@2x.jpg 2x" media="(min-width: 1200px)">
+                                
+                                    <source srcset="./images/2-6-tab.jpg 1x, ./images/2-6-tab@2x.jpg 2x" media="(min-width: 768px)">
+                                
+                                    <source srcset="./images/2-6-mob.jpg 1x, ./images/2-6-mob@2x.jpg 2x" media="(max-width: 767px)">
+                                
+                                    <img src="./images/2-6-tab.jpg" alt="Монитор">
+                                </picture>
                                 <p class="portfolio-item__overlay-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id consequuntur accusantium neque! Rerum placeat error saepe delectus laudantium velit eius.</p>
                             </div>                            
                             <div class="portfolio-item__card-desc">
@@ -168,7 +222,15 @@
                     <li class="portfolio-item">
                         <a href="#" class="portfolio-item__link">
                             <div class="portfolio-item__overlay">
-                                <img src="./images/limited-edition.jpg" alt="Журнал" width="370">
+                                <picture>
+                                    <source srcset="./images/2-7-pc.jpg 1x, ./images/2-7-pc@2x.jpg 2x" media="(min-width: 1200px)">
+                                
+                                    <source srcset="./images/2-7-tab.jpg 1x, ./images/2-7-tab@2x.jpg 2x" media="(min-width: 768px)">
+                                
+                                    <source srcset="./images/2-7-mob.jpg 1x, ./images/2-7-mob@2x.jpg 2x" media="(max-width: 767px)">
+                                
+                                    <img src="./images/2-7-tab.jpg" alt="Журнал">
+                                </picture>
                                 <p class="portfolio-item__overlay-desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt totam asperiores corporis quidem quia velit voluptates adipisci officiis assumenda saepe.</p>
                             </div>                            
                             <div class="portfolio-item__card-desc">
@@ -180,7 +242,15 @@
                     <li class="portfolio-item">
                         <a href="#" class="portfolio-item__link">
                             <div class="portfolio-item__overlay">
-                                <img src="./images/lab.jpg" alt="Этикетка" width="370">
+                                <picture>
+                                    <source srcset="./images/2-8-pc.jpg 1x, ./images/2-8-pc@2x.jpg 2x" media="(min-width: 1200px)">
+                                
+                                    <source srcset="./images/2-8-tab.jpg 1x, ./images/2-8-tab@2x.jpg 2x" media="(min-width: 768px)">
+                                
+                                    <source srcset="./images/2-8-mob.jpg 1x, ./images/2-8-mob@2x.jpg 2x" media="(max-width: 767px)">
+                                
+                                    <img src="./images/2-8-tab.jpg" alt="Этикетка">
+                                </picture>
                                 <p class="portfolio-item__overlay-desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate consequatur nobis expedita harum saepe porro facere, ipsum doloremque earum culpa.</p>
                             </div>
                             <div class="portfolio-item__card-desc">
@@ -192,7 +262,15 @@
                     <li class="portfolio-item">
                         <a href="#" class="portfolio-item__link">
                             <div class="portfolio-item__overlay">
-                                <img src="./images/growing-business.jpg" alt="Ноутбук" width="370">
+                                <picture>
+                                    <source srcset="./images/2-9-pc.jpg 1x, ./images/2-9-pc@2x.jpg 2x" media="(min-width: 1200px)">
+                                
+                                    <source srcset="./images/2-9-tab.jpg 1x, ./images/2-9-tab@2x.jpg 2x" media="(min-width: 768px)">
+                                
+                                    <source srcset="./images/2-9-mob.jpg 1x, ./images/2-9-mob@2x.jpg 2x" media="(max-width: 767px)">
+                                
+                                    <img src="./images/2-9-tab.jpg" alt="Ноутбук">
+                                </picture>
                                 <p class="portfolio-item__overlay-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi dignissimos doloribus odit dicta tempore corrupti nulla doloremque cupiditate id. Placeat.</p>
                             </div>                            
                             <div class="portfolio-item__card-desc">
