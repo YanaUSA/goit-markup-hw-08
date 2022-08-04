@@ -45,7 +45,7 @@
 
 // Mobile overlay 1x, 2x 
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 767px) {
     .overlay {
         max-width: 767px;
         max-height: 400px;
